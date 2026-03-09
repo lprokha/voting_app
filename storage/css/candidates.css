@@ -92,6 +92,11 @@ img {
     background-color: whitesmoke;
 }
 
+.winner:hover {
+    background-color: crimson;
+    color: white;
+}
+
 .winner {
     background-color: crimson;
     color: white;

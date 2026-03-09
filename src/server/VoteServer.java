@@ -153,9 +153,17 @@ public class VoteServer extends BasicServer {
         List<Candidate> candidates = candidateStorage.getCandidatesSortedByVotes();
         int totalVotes = candidateStorage.getTotalVotes();
 
+        int maxVotes = 0;
+        for (Candidate c : candidates) {
+            if (c.getVotes() > maxVotes) {
+                maxVotes = c.getVotes();
+            }
+        }
+
         Map<String, Object> model = new HashMap<>();
         model.put("candidates", candidates);
         model.put("totalVotes", totalVotes);
+        model.put("maxVotes", maxVotes);
 
         Map<String, String> percents = new HashMap<>();
         for (Candidate candidate : candidates) {
