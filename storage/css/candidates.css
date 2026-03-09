@@ -17,21 +17,22 @@ a {
 
 img {
     border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-
-
 
 .back {
     width: 300px;
     padding: 10px 0px;
     background-color: black;
-    color:orange;
+    color: orange;
     border-radius: 5px;
 }
 .back:hover {
     transition-duration: 0.3s;
     background-color: orange;
-    color:black;
+    color: black;
 }
 
 .vote {
@@ -54,6 +55,7 @@ img {
 .container {
     width: 1000px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .flex {
@@ -83,6 +85,7 @@ img {
     margin: 20px 0 0 0;
     padding: 10px 0;
     border-radius: 5px;
+    text-align: center;
 }
 
 .card:hover {
@@ -91,4 +94,5 @@ img {
 
 .winner {
     background-color: crimson;
+    color: white;
 }
